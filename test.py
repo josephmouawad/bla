@@ -15,14 +15,5 @@ DocPlan = {
 	"completedClassesMSG" : DocPlanNode(["route", "sequence", [], "", False]),
 	"gpaMSG" : DocPlanNode(["route", "sequence", [], "",Fasle]),
 
-	"prefClasses" : DocPlanNode(["route", "sequence", ["prefClassesAvailabilityMSG", "prefPreReqMSG"], "", False]),
-	"prefClassesAvailabilityMSG" : DocPlanNode(["route", "sequence", [], "", False]),
-	"prefPreReqMSG" : DocPlanNode(["route", "sequence", [], "", False]),
-
-	"optimalPlan" : DocPlanNode(["route", "sequence", [], "", False]),
-	
-	"alternativePlans" : DocPlanNode(["route", "sequence", [], "", False])	
-};
-
 for k,v in DocPlan.items():
 	print(k +  " " + str(v.visited));
